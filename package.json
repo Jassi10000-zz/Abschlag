@@ -18,9 +18,14 @@
   },
   "homepage": "https://github.com/Jassi10000/markdown-blog#readme",
   "dependencies": {
+    "dompurify": "^2.3.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "jsdom": "^16.6.0",
+    "marked": "^2.1.3",
+    "method-override": "^3.0.0",
     "mongoose": "^5.13.3",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "slugify": "^1.6.0"
   }
 }
