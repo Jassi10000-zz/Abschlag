@@ -1,0 +1,25 @@
+<!-- this file is basically for the partial view of the form -->
+
+
+<!-- for the title -->
+<div class="form-group">
+    <label for="title">Title</label>
+    <input required value="<%= article.title %>" type="text" name="title" id="title" class="form-control mb-2">
+</div>
+
+<!-- for the description -->
+<div class="form-group">
+    <label for="description">Description</label>
+    <textarea name="description" id="description" class="form-control mb-2"><%= article.desc %></textarea>
+</div>
+
+<!-- for the markdown -->
+<div class="form-group">
+    <label for="markdown">Markdown</label>
+    <textarea required name="markdown" id="markdown" class="form-control mb-2"><%= article.markdown %></textarea>
+</div>
+
+<!-- in case of cancelling the editing -->
+<a href="/" class="btn btn-secondary mt-4">Cancel</a>
+
+<button type="submit" class="btn btn-info mt-4">Save</button>

@@ -11,7 +11,12 @@
     </head>
     <body>
        <div class="container">
-           <h1 class="md-4">New Article</h1>
+           <h1 class="mb-4">New Article</h1>
+
+            <form action="/articles" method="POST">
+        <!-- %- means that it will include the exact html from the target file -->
+                <%- include('_form_fields') %>
+            </form>
        </div>
         <script src="" async defer></script>
     </body>
